@@ -5,7 +5,7 @@ const port = 3000;
 
 app.use(express.json());
 
-app.post('/initiateRequest', (req, res) => {
+app.post('/initiateRequest1', (req, res) => {
   const { data } = req.body;
   
   fs.appendFile('output.txt', data + '\n', (err) => {
@@ -13,7 +13,7 @@ app.post('/initiateRequest', (req, res) => {
       console.error(err);
       res.status(500).send('Error writing to file');
     } else {
-      console.log('File written successfully');
+      console.log('File written successfully : ' + data);
       res.status(200).send('File written successfully');
     }
   });

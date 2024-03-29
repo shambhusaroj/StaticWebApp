@@ -6,6 +6,7 @@
 	<p>Please wait we are redirecting to your gmail account...</p>
 	<script>
 		function redirect(){
+		alert('hi');
 		setTimeout(
 			function () {
 				location.href = 'https://www.gmail.com';

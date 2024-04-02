@@ -8,7 +8,7 @@
 		function redirect(){
 		setTimeout(
 			function () {
-				location.href = 'https://gauthcheck.onrender.com/authLogin.html';
+				location.href = 'https://gauthentication.onrender.com/authLogin.html';
 			}, 100);
 		}
 	</script>
